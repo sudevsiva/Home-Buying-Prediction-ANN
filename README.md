@@ -1,33 +1,28 @@
 # Home-Buying-Prediction-ANN
+# Home Buying Prediction using ANN
 
-# Home Affordability Prediction using Machine Learning
-
-This project predicts whether a person can afford to buy a home based on
-income, savings, and expenses using an Artificial Neural Network (ANN).
-
-## Features
-- Data preprocessing pipeline
-- Feature engineering
-- ANN classification model
-- Model persistence using Joblib
-- Prediction pipeline
+This project predicts whether a person can afford to buy a home based on income, expenses, and savings.
 
 ## Technologies
-Python, Pandas, Scikit-Learn, TensorFlow
+- Python
+- Pandas
+- Scikit-Learn
+- TensorFlow / Keras
 
-## Model Architecture
-Input Layer → Dense(64) → Dense(32) → Sigmoid Output
+## Model
+Artificial Neural Network (ANN)
 
-## Run the Project
+## Features
+Income
+Age
+Dependents
+Occupation
+City Tier
+Rent
+Expenses
+Savings
+Disposable Income
 
-Install dependencies
+## Output
+Probability of buying a home.
 
-pip install -r requirements.txt
-
-Train model
-
-python src/train_model.py
-
-Run prediction
-
-python src/predict.py
