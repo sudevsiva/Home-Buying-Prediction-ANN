@@ -28,13 +28,13 @@ def preprocess_data(path):
     scaler=StandardScaler()
     X_scaled=scaler.fit_transform(X)
     
-    joblib.dump(scaler,"D:/Datascience/Anaconda/Data science_project/models/scaler.pkl")
-    joblib.dump(X.columns,"D:/Datascience/Anaconda/Data science_project/models/feature_columns.pkl")
+    joblib.dump(scaler,"...../models/scaler.pkl")
+    joblib.dump(X.columns,"..../models/feature_columns.pkl")
     
     return X_scaled,y
 
 #assign X,y
-X,y=preprocess_data("D:\ML project\salary and expense.csv")
+X,y=preprocess_data("...\salary and expense.csv")
 
 # split X,y
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=.2,random_state=42)
@@ -57,11 +57,11 @@ loss,acc=model.evaluate(X_test,y_test)
 print("model Accuracy :",acc)
 
 
-model.save("D:/Datascience/Anaconda/Data science_project/models/Buy_model.h5")
+model.save("..../models/Buy_model.h5")
 
-model=load_model("D:\Datascience\Anaconda\Data science_project\models\Buy_model.h5")
-scaler=joblib.load("D:/Datascience/Anaconda/Data science_project/models/scaler.pkl")
-feature_columns = joblib.load("D:/Datascience/Anaconda/Data science_project/models/feature_columns.pkl")
+model=load_model("....\models\Buy_model.h5")
+scaler=joblib.load("..../models/scaler.pkl")
+feature_columns = joblib.load(".../models/feature_columns.pkl")
 
 
 
@@ -128,3 +128,4 @@ else:
 
 
     
+
